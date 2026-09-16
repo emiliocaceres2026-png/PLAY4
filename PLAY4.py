@@ -10,13 +10,14 @@ from selenium.webdriver.common.keys import Keys
 from webdriver_manager.firefox import GeckoDriverManager
 
 LINKS = [
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357746P0iixu0m24ccui7yweyf&balance=0&currency=USD&userid=14309469&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357753Pdtqlpr1s356gquff8w1&balance=0&currency=USD&userid=14309476&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357763Pnuufx4n5q4rzf4t8k2l&balance=0&currency=USD&userid=14309486&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357772P3r9eke8gbuj9kbzi8ps&balance=0&currency=USD&userid=14309495&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357783Pnqog5595hd8ud01au2o&balance=0&currency=USD&userid=14309506&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357787P4hv0zzwrgfvu2krhd0n&balance=0&currency=USD&userid=14309510&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357792Piwkr1dpx7u8rjrx17qr&balance=0&currency=USD&userid=14309515&isMobile=false"
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357798Ptj1gd0as7cnx6k6vi6c&balance=0&currency=USD&userid=14309522&isMobile=false",
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357803Pgxlqlis1qv228hx39hb&balance=0&currency=USD&userid=14309528&isMobile=false",
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357814P2bni97ok667wl5lx42k&balance=0&currency=USD&userid=14309540&isMobile=false",
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357819Py5vjw2p10jnx9y2sgfv&balance=0&currency=USD&userid=14309545&isMobile=false"
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=SPRIBE&lan=es&partnerid=8&token=0P12849627Pr2tgiazgv3jpo9lzjiz&balance=0&currency=USD&userid=12792557&isMobile=false",
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=SPRIBE&lan=es&partnerid=8&token=0P12849637P77xo7j7jg9a4kqjwhd5&balance=0&currency=USD&userid=12792567&isMobile=false",
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=SPRIBE&lan=es&partnerid=8&token=0P12633447Pyqxlz8bxqa4hvuyj36k&balance=0&currency=USD&userid=12574568&isMobile=false",
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=SPRIBE&lan=es&partnerid=8&token=0P12849645P0v2ut5dmr1w9dbboaui&balance=0&currency=USD&userid=12792575&isMobile=false"
 ]
 
 PLANTILLA_BASE = "Quieres Ganar Mas de 2 mil en 45 minutoｓ Escribeme al Whatsapp⚡ ✅𝐎𝟗𝟔𝟖𝟖𝟑𝟐𝟑𝟎𝟎✅⚓𝚃𝙴L𝙴𝙶𝚁AM😚✅𝙰𝚅𝙸𝙰𝚃𝙾𝚁𝙿𝙺𝙰✅Sin 𝙿agos adelantadoss⚓⚡⛳⛺➕➗VAR_3"
@@ -83,7 +84,7 @@ def buscar_campo_texto(dr):
     return None
 
 def abrir_y_verificar_tags_todos(dr):
-    print("⏳ [LITHIUMS2 - HEADLESS] Abriendo y preparando todos los chats en segundo plano...")
+    print("⏳ [LITHIUMS4 - HEADLESS] Abriendo y preparando todos los chats en segundo plano...")
     handles = []
     for i, url in enumerate(LINKS):
         if i == 0:
@@ -151,7 +152,7 @@ def run():
         
         proximo_disparo_por_tag = {i: 0.0 for i in range(num_tags)}
         
-        print(f"\n🚀 [LITHIUMS2 ACTIONS] INICIANDO RACHAS INTELIGENTES ({num_tags} chats activos)...")
+        print(f"\n🚀 [LITHIUMS4 ACTIONS] INICIANDO RACHAS INTELIGENTES ({num_tags} chats activos)...")
         
         while total_disparos_global < MAX_DISPAROS_CICLO:
             ahora = time.time()
@@ -167,24 +168,24 @@ def run():
                     if disparar_con_protocolo_seguro(dr, handles[idx], idx, msg):
                         total_disparos_global += 1
                         disparo_realizado_en_iteracion = True
-                        print(f"    ⚡ [LITHIUMS2] Chat #{idx+1} enviado | Total ciclo: {total_disparos_global}/{MAX_DISPAROS_CICLO}")
+                        print(f"    ⚡ [LITHIUMS4] Chat #{idx+1} enviado | Total ciclo: {total_disparos_global}/{MAX_DISPAROS_CICLO}")
                         
                         proximo_disparo_por_tag[idx] = time.time() + 5.0
             
             if not disparo_realizado_en_iteracion:
                 time.sleep(0.1)
         
-        print(f"\n🎯 [LITHIUMS2] META DE {MAX_DISPAROS_CICLO} ALCANZADA.")
+        print(f"\n🎯 [LITHIUMS4] META DE {MAX_DISPAROS_CICLO} ALCANZADA.")
         
     except Exception as e:
-        print(f"⚠️ [LITHIUMS2] Error en ejecución: {e}")
+        print(f"⚠️ [LITHIUMS4] Error en ejecución: {e}")
     finally:
         try: dr.quit()
         except: pass
         limpiar_especifico(pid)
         historial_enviados.clear()
         gc.collect()
-        print("🔄 [LITHIUMS2] Ciclo finalizado correctamente en GitHub Actions.\n")
+        print("🔄 [LITHIUMS4] Ciclo finalizado correctamente en GitHub Actions.\n")
 
 if __name__ == "__main__": 
     run()
