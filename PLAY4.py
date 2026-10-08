@@ -10,14 +10,7 @@ from selenium.webdriver.common.keys import Keys
 from webdriver_manager.firefox import GeckoDriverManager
 
 LINKS = [
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357798Ptj1gd0as7cnx6k6vi6c&balance=0&currency=USD&userid=14309522&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357803Pgxlqlis1qv228hx39hb&balance=0&currency=USD&userid=14309528&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357814P2bni97ok667wl5lx42k&balance=0&currency=USD&userid=14309540&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14357819Py5vjw2p10jnx9y2sgfv&balance=0&currency=USD&userid=14309545&isMobile=false"
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=SPRIBE&lan=es&partnerid=8&token=0P12849627Pr2tgiazgv3jpo9lzjiz&balance=0&currency=USD&userid=12792557&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=SPRIBE&lan=es&partnerid=8&token=0P12849637P77xo7j7jg9a4kqjwhd5&balance=0&currency=USD&userid=12792567&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=SPRIBE&lan=es&partnerid=8&token=0P12633447Pyqxlz8bxqa4hvuyj36k&balance=0&currency=USD&userid=12574568&isMobile=false",
-    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=SPRIBE&lan=es&partnerid=8&token=0P12849645P0v2ut5dmr1w9dbboaui&balance=0&currency=USD&userid=12792575&isMobile=false"
+    "https://casino.virtualsoft.tech/game/play/?gameid=203831&mode=real&provider=undefined&lan=es&partnerid=8&token=0P14593533Ppn5ivi2pjt3y257eyr8&balance=0&currency=USD&userid=14545706&isMobile=false"
 ]
 
 PLANTILLA_BASE = "Quieres Ganar Mas de 2 mil en 45 minutoｓ Escribeme al Whatsapp⚡ ✅𝐎𝟗𝟔𝟖𝟖𝟑𝟐𝟑𝟎𝟎✅⚓𝚃𝙴L𝙴𝙶𝚁AM😚✅𝙰𝚅𝙸𝙰𝚃𝙾𝚁𝙿𝙺𝙰✅Sin 𝙿agos adelantadoss⚓⚡⛳⛺➕➗VAR_3"
